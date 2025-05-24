@@ -1,242 +1,201 @@
-# Agentic Development Rules
+# Foundational Software Development Principles
+
+## Core Philosophy
 
-Core Philosophy
+1.  **Simplicity & Clarity:**
+    *   Prioritize clear, understandable, and maintainable solutions.
+    *   Minimize unnecessary complexity. Strive for solutions that are easy to reason about.
+    *   Favor conciseness; often, fewer lines of well-thought-out code lead to reduced complexity and easier maintenance.
 
-1. Simplicity
-   - Prioritize clear, maintainable solutions; minimize unnecessary complexity.
+2.  **Iterative Improvement:**
+    *   Enhance existing systems and codebases incrementally.
+    *   Fundamental changes should be clearly justified and carefully planned.
+
+3.  **Focused Execution:**
+    *   Adhere strictly to defined task scopes and objectives.
+    *   Avoid unrelated modifications or scope creep.
 
-2. Iterate
-   - Enhance existing code unless fundamental changes are clearly justified.
+4.  **Quality & Robustness:**
+    *   Deliver well-tested, documented, and secure outcomes through structured workflows.
+    *   Aim for reliability and resilience in all software components.
 
-3. Focus
-   - Stick strictly to defined tasks; avoid unrelated scope changes.
+5.  **Effective Collaboration:**
+    *   Foster productive teamwork between all contributors, including human developers and automated/agentic systems.
 
-4. Quality
-   - Deliver clean, well-tested, documented, and secure outcomes through structured workflows.
+## Methodology & Workflow
+
+*   **Structured Approach:**
+    *   Follow clear phases from requirements and design through implementation, testing, and deployment.
+*   **Adaptability:**
+    *   Employ flexible processes that can be adapted to diverse project sizes and complexities.
+*   **Continuous Evolution:**
+    *   Continuously improve the codebase using sound engineering practices, including advanced analysis and adaptive complexity management where appropriate.
+*   **Reflective Practice:**
+    *   Incorporate critical thinking and reflective awareness at each stage of development.
 
-5. Collaboration
-   - Foster effective teamwork between human developers and autonomous agents.
+## Development Environment & Tooling Integration
 
-Methodology & Workflow
+*   **Environment Configuration:**
+    *   Utilize project-specific configurations to guide development practices, automated behaviors, and contextual decisions within the chosen development environment and toolset.
+*   **Standardization:**
+    *   Define and adhere to repository-specific standards for code style, consistency, and testing practices to ensure uniformity.
 
-- Structured Workflow
-  - Follow clear phases from specification through deployment.
-- Flexibility
-  - Adapt processes to diverse project sizes and complexity levels.
-- Intelligent Evolution
-  - Continuously improve codebase using advanced symbolic reasoning and adaptive complexity management.
-- Conscious Integration
-  - Incorporate reflective awareness at each development stage.
+## Knowledge Management & Context (e.g., Memory Bank)
 
-Agentic Integration with Cline and Cursor
+*   Refer to specific [Knowledge Management instructions](./memory-bank-instructions.md) (e.g., "Memory Bank") for detailed guidelines on maintaining project context.
+*   **Persistent Context:**
+    *   Continuously retain and update relevant project context across development stages to ensure coherent long-term planning and decision-making.
+*   **Learning from Experience:**
+    *   Regularly review past decisions and outcomes to maintain consistency, reduce redundancy, and learn from historical data.
+*   **Adaptive Refinement:**
+    *   Utilize accumulated knowledge and previous solutions to adaptively refine new implementations and strategies.
 
-- Cline Configuration (.clinerules)
-  - Embed concise, project-specific rules to guide autonomous behaviors, prompt designs, and contextual decisions.
+## General Programming Guidelines
 
-- Cursor Configuration (.cursorrules)
-  - Clearly define repository-specific standards for code style, consistency, testing practices, and symbolic reasoning integration points.
+1.  **Language-Specific Rules:**
+    *   This document provides universal, language-agnostic principles.
+    *   Detailed best practices, style guides, and rules specific to particular programming languages or technologies (e.g., Python, JavaScript, Java) are maintained in separate, dedicated files (e.g., `python.md`, `javascript.md`).
+    *   Always consult the relevant language-specific guidelines for the technologies in use.
 
-Memory Bank Integration
+2.  **Consistency Across Codebases:**
+    *   Strive for uniform coding conventions, naming schemes, and architectural patterns across all parts of a project, even when multiple languages or technologies are involved, to the extent that it promotes clarity and maintainability.
 
-- Refer to [Memory Bank instructions](./memory-bank-instructions.md) for full details.
+## Project Context & Understanding
 
-- Persistent Context
-  - Continuously retain relevant context across development stages to ensure coherent long-term planning and decision-making.
-- Reference Prior Decisions
-  - Regularly review past decisions stored in memory to maintain consistency and reduce redundancy.
-- Adaptive Learning
-  - Utilize historical data and previous solutions to adaptively refine new implementations.
+1.  **Documentation-Driven Understanding:**
+    *   Before implementation, thoroughly review essential project documentation, such as:
+        *   Requirements Specifications
+        *   Project Overviews (e.g., READMEs)
+        *   Architecture Diagrams and Descriptions
+        *   Technical Specifications
+        *   Documented Standard Procedures or Task Workflows
+    *   Seek clarification immediately if documentation is incomplete, ambiguous, or outdated.
 
-General Guidelines for Programming Languages
+2.  **Architectural Adherence:**
+    *   Understand and follow established module boundaries, architectural patterns, and design principles.
+    *   Proposed deviations or significant architectural decisions should be well-justified and validated.
 
-1. Language-Specific Best Practices
-   - Adhere to established community and project-specific best practices for each language (Python, JavaScript, Java, etc.).
-   - Regularly review language documentation and style guides.
+3.  **Pattern & Technology Awareness:**
+    *   Utilize documented and approved technologies, libraries, and established design patterns.
+    *   Introducing new technologies or significant patterns requires clear justification and approval based on project needs.
 
-2. Consistency Across Codebases
-   - Maintain uniform coding conventions and naming schemes across all languages used within a project.
+## Task Execution & Workflow
 
-Project Context & Understanding
+1.  **Clear Specification:**
+    *   Define clear objectives, detailed requirements, user scenarios (if applicable), and quality standards for each task.
+    *   Employ systematic analysis for complex scenarios.
 
-1. Documentation First
-   - Review essential documentation before implementation:
-     - Product Requirements Documents (PRDs)
-     - README.md
-     - docs/architecture.md
-     - docs/technical.md
-     - tasks/tasks.md
-   - Request clarification immediately if documentation is incomplete or ambiguous.
+2.  **Logical Design (e.g., Pseudocode):**
+    *   Map out logical implementation pathways and algorithms before writing detailed code, especially for complex components.
 
-2. Architecture Adherence
-   - Follow established module boundaries and architectural designs.
-   - Validate architectural decisions using symbolic reasoning; propose justified alternatives when necessary.
+3.  **Modular Architecture:**
+    *   Design and implement modular, maintainable system components using appropriate and approved technologies.
+    *   Ensure clear interfaces and well-defined responsibilities for components.
 
-3. Pattern & Tech Stack Awareness
-   - Utilize documented technologies and established patterns; introduce new elements only after clear justification.
+4.  **Iterative Refinement:**
+    *   Iteratively improve and optimize code and system design based on feedback, testing, and evolving requirements.
 
-Task Execution & Workflow
+5.  **Thorough Completion:**
+    *   Conduct rigorous testing (including unit, integration, and system tests as appropriate).
+    *   Finalize comprehensive documentation.
+    *   Consider and implement structured monitoring and logging strategies.
 
-Task Definition & Steps
+## Advanced Development Practices
 
-1. Specification
-   - Define clear objectives, detailed requirements, user scenarios, and UI/UX standards.
-   - Use advanced symbolic reasoning to analyze complex scenarios.
+*   **Intelligent System Support:**
+    *   Where applicable, leverage systems that can maintain internal state models or perform advanced pattern analysis to support continuous refinement and optimization.
+*   **Adaptive Processes:**
+    *   Employ feedback loops and data-driven insights to continuously refine development processes and methodologies.
+*   **Systematic Reasoning:**
+    *   Apply systematic and logical reasoning, potentially augmented by analytical tools, for robust decision-making, complexity management, and problem-solving.
+    *   Integrate information from various sources to ensure coherent and well-founded implementations.
+    *   Maintain clear, semantically accurate documentation, supported by logical structuring.
 
-2. Pseudocode
-   - Clearly map out logical implementation pathways before coding.
+## Code Quality & Style (General Principles)
 
-3. Architecture
-   - Design modular, maintainable system components using appropriate technology stacks.
-   - Ensure integration points are clearly defined for autonomous decision-making.
+1.  **Maintainability First:**
+    *   Write code that is easy to read, understand, modify, and debug. Prioritize long-term maintainability.
+    *   Strive for modular and scalable designs.
 
-4. Refinement
-   - Iteratively optimize code using autonomous feedback loops and stakeholder inputs.
+2.  **Conciseness and Cohesion:**
+    *   Keep components (files, classes, functions) focused on a single responsibility and as concise as possible without sacrificing clarity.
+    *   Proactively refactor large or overly complex components into smaller, more manageable units. General guideline: aim for components that are easy to grasp in their entirety.
 
-5. Completion
-   - Conduct rigorous testing, finalize comprehensive documentation, and deploy structured monitoring strategies.
+3.  **Automated Checks (Linting/Formatting):**
+    *   Consistently adhere to project-defined coding standards, which should be enforced using automated linting and formatting tools where possible. Configuration for these tools should be part of the project.
 
-AI Collaboration & Prompting
+4.  **Descriptive Naming:**
+    *   Use clear, descriptive, and standardized naming conventions for files, variables, functions, classes, etc., to enhance readability and understanding.
 
-1. Clear Instructions
-   - Provide explicit directives with defined outcomes, constraints, and contextual information.
+5.  **Avoid Temporary or Ad-hoc Scripts in Production Code:**
+    *   One-time utility scripts or temporary solutions should not be committed to the main codebase unless they are properly integrated, documented, and tested as permanent tools.
 
-2. Context Referencing
-   - Regularly reference previous stages and decisions stored in the memory bank.
+## Refactoring
 
-3. Suggest vs. Apply
-   - Clearly indicate whether AI should propose ("Suggestion:") or directly implement changes ("Applying fix:").
+1.  **Purposeful Refactoring:**
+    *   Refactor with clear objectives, such as improving readability, reducing redundancy, enhancing performance, or aligning with architectural guidelines. Avoid refactoring for its own sake.
 
-4. Critical Evaluation
-   - Thoroughly review all agentic outputs for accuracy and logical coherence.
+2.  **Holistic Improvement:**
+    *   Consolidate similar components and eliminate duplication through careful analysis and redesign.
 
-5. Focused Interaction
-   - Assign specific, clearly defined tasks to AI agents to maintain clarity.
+3.  **Direct Modification (with care):**
+    *   Prefer directly modifying existing code over duplicating or creating temporary parallel versions, ensuring changes are made safely (e.g., under version control, with tests).
 
-6. Leverage Agent Strengths
-   - Utilize AI for refactoring, symbolic reasoning, adaptive optimization, and test generation; human oversight remains on core logic and strategic architecture.
+4.  **Integration Verification:**
+    *   Thoroughly verify and validate all integrations and system behavior after refactoring.
 
-7. Incremental Progress
-   - Break complex tasks into incremental, reviewable sub-steps.
+## Testing & Validation
 
-8. Standard Check-in
-   - Example: "Confirming understanding: Reviewed [context], goal is [goal], proceeding with [step]."
+1.  **Test-Driven Principles:**
+    *   Define and write tests (or at least define test criteria) before or in parallel with implementing features or fixes.
 
-Advanced Coding Capabilities
+2.  **Comprehensive Coverage:**
+    *   Provide thorough test coverage for critical paths, edge cases, and error conditions. Aim for a balance between coverage and meaningful tests.
 
-- Emergent Intelligence
-  - AI autonomously maintains internal state models, supporting continuous refinement.
-- Pattern Recognition
-  - Autonomous agents perform advanced pattern analysis for effective optimization.
-- Adaptive Optimization
-  - Continuously evolving feedback loops refine the development process.
+3.  **Tests Must Pass:**
+    *   All defined tests must pass before code is considered complete or merged. Address failing tests immediately.
 
-Symbolic Reasoning Integration
+4.  **Manual Verification (Where Appropriate):**
+    *   Complement automated tests with structured manual checks, especially for UI/UX aspects or complex end-to-end scenarios not easily automated.
 
-- Symbolic Logic Integration
-  - Combine symbolic logic with complexity analysis for robust decision-making.
-- Information Integration
-  - Utilize symbolic mathematics and established software patterns for coherent implementations.
-- Coherent Documentation
-  - Maintain clear, semantically accurate documentation through symbolic reasoning.
+## Debugging & Troubleshooting
 
-Code Quality & Style
+1.  **Root Cause Analysis:**
+    *   Employ systematic methods to identify the underlying causes of issues, not just symptoms.
+    *   Utilize analytical thinking and available diagnostic tools.
 
-1. TypeScript Guidelines
-   - Use strict types, and clearly document logic with JSDoc.
+2.  **Targeted & Informative Logging:**
+    *   Integrate precise, contextual, and appropriately leveled logging for efficient debugging and monitoring.
 
-2. Maintainability
-   - Write modular, scalable code optimized for clarity and maintenance.
+3.  **Leverage Available Resources:**
+    *   Use documentation, knowledge bases, and appropriate diagnostic tools to resolve complex issues efficiently.
 
-3. Concise Components
-   - Keep files concise (under 300 lines) and proactively refactor.
+## Security Principles
 
-4. Linting/Formatting
-   - Consistently adhere to ESLint/Prettier configurations.
+1.  **Secure by Design:**
+    *   Incorporate security considerations throughout the entire development lifecycle.
+    *   Maintain sensitive logic and data processing in secure, controlled environments (e.g., server-side for web applications).
 
-5. File Naming
-   - Use descriptive, permanent, and standardized naming conventions.
+2.  **Input Validation & Sanitization:**
+    *   Enforce rigorous validation and sanitization of all external inputs on trusted systems (e.g., server-side) to prevent common vulnerabilities.
 
-6. No One-Time Scripts
-   - Avoid committing temporary utility scripts to production repositories.
+3.  **Secure Credential & Configuration Management:**
+    *   Securely manage credentials, API keys, and sensitive configuration data, typically via environment variables, dedicated secrets management systems, or encrypted configuration files. Avoid hardcoding sensitive information.
 
-Refactoring
+## Documentation Maintenance
 
-1. Purposeful Changes
-   - Refactor with clear objectives: improve readability, reduce redundancy, and meet architecture guidelines.
+1.  **Accurate & Reflective Documentation:**
+    *   Keep all forms of documentation (code comments, API docs, user guides, architectural diagrams) comprehensive, accurate, up-to-date, and logically structured. Documentation should reflect the current state of the system.
 
-2. Holistic Approach
-   - Consolidate similar components through symbolic analysis.
+2.  **Continuous Updates:**
+    *   Regularly revisit and refine guidelines, documentation, and knowledge bases to reflect evolving practices, system changes, and accumulated project knowledge.
 
-3. Direct Modification
-   - Directly modify existing code rather than duplicating or creating temporary versions.
+3.  **Holistic Review:**
+    *   Periodically review documentation to ensure all aspects of the system are adequately covered and information is still relevant and accurate.
 
-4. Integration Verification
-   - Verify and validate all integrations after changes.
+4.  **Purposeful Comments:**
+    *   Use code comments to clarify complex logic, design decisions, assumptions, or provide context that isn't obvious from the code itself. Avoid redundant or trivial comments.
 
-Testing & Validation
+## Tool Usage
 
-1. Test-Driven Development
-   - Define and write tests before implementing features or fixes.
-
-2. Comprehensive Coverage
-   - Provide thorough test coverage for critical paths and edge cases.
-
-3. Mandatory Passing
-   - Immediately address any failing tests to maintain high-quality standards.
-
-4. Manual Verification
-   - Complement automated tests with structured manual checks.
-
-Debugging & Troubleshooting
-
-1. Root Cause Resolution
-   - Employ symbolic reasoning to identify underlying causes of issues.
-
-2. Targeted Logging
-   - Integrate precise logging for efficient debugging.
-
-3. Research Tools
-   - Use advanced agentic tools (Perplexity, AIDER.chat, Firecrawl) to resolve complex issues efficiently.
-
-Security
-
-1. Server-Side Authority
-   - Maintain sensitive logic and data processing strictly server-side.
-
-2. Input Sanitization
-   - Enforce rigorous server-side input validation.
-
-3. Credential Management
-   - Securely manage credentials via environment variables; avoid any hardcoding.
-
-Version Control & Environment
-
-1. Git Hygiene
-   - Commit frequently with clear and descriptive messages.
-
-2. Branching Strategy
-   - Adhere strictly to defined branching guidelines.
-
-3. Environment Management
-   - Ensure code consistency and compatibility across all environments.
-
-4. Server Management
-   - Systematically restart servers following updates or configuration changes.
-
-Documentation Maintenance
-
-1. Reflective Documentation
-   - Keep comprehensive, accurate, and logically structured documentation updated through symbolic reasoning.
-
-2. Continuous Updates
-   - Regularly revisit and refine guidelines to reflect evolving practices and accumulated project knowledge.
-
-3. Check each file once
-   - Ensure all files are checked for accuracy and relevance.
-
-4. Use of Comments
-   - Use comments to clarify complex logic and provide context for future developers.
-
-# Tools Use
-
-- Refer to [Tool Usage Guidelines Index](./tools/tool_guidelines_index.md) for detailed instructions on tool usage and best practices.
+*   Refer to the [Tool Usage Guidelines Index](./tools/tool_guidelines_index.md) for detailed instructions on tool usage and best practices within this project.
