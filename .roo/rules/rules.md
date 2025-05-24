@@ -49,15 +49,11 @@ Memory Bank Integration
 
 General Guidelines for Programming Languages
 
-1. Clarity and Readability
-   - Favor straightforward, self-explanatory code structures across all languages.
-   - Include descriptive comments to clarify complex logic.
-
-2. Language-Specific Best Practices
+1. Language-Specific Best Practices
    - Adhere to established community and project-specific best practices for each language (Python, JavaScript, Java, etc.).
    - Regularly review language documentation and style guides.
 
-3. Consistency Across Codebases
+2. Consistency Across Codebases
    - Maintain uniform coding conventions and naming schemes across all languages used within a project.
 
 Project Context & Understanding
@@ -154,16 +150,13 @@ Code Quality & Style
 3. Concise Components
    - Keep files concise (under 300 lines) and proactively refactor.
 
-4. Avoid Duplication (DRY)
-   - Use symbolic reasoning to systematically identify redundancy.
-
-5. Linting/Formatting
+4. Linting/Formatting
    - Consistently adhere to ESLint/Prettier configurations.
 
-6. File Naming
+5. File Naming
    - Use descriptive, permanent, and standardized naming conventions.
 
-7. No One-Time Scripts
+6. No One-Time Scripts
    - Avoid committing temporary utility scripts to production repositories.
 
 Refactoring
@@ -246,4 +239,4 @@ Documentation Maintenance
 
 # Tools Use
 
-- Refer to [tools](./tools/).
+- Refer to [Tool Usage Guidelines Index](./tools/tool_guidelines_index.md) for detailed instructions on tool usage and best practices.
