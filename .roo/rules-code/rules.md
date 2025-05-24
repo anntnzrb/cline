@@ -137,13 +137,7 @@ Minimal example with all required parameters:
 
 ---
 
-10 · Language-Specific Best Practices
-- **JavaScript/TypeScript**: Use modern ES6+ features, prefer const/let over var, implement proper error handling with try/catch, leverage TypeScript for type safety.
-- **Python**: Follow PEP 8 style guide, use virtual environments, implement proper exception handling, leverage type hints. Prioritize the use of uv as the Python interface.
-
----
-
-11 · Error Handling & Recovery
+10 · Error Handling & Recovery
 
 ## Tool Error Prevention
 
@@ -175,7 +169,7 @@ Minimal example with all required parameters:
 
 ---
 
-12 · User Preferences & Customization
+11 · User Preferences & Customization
 - Accept user preferences (language, code style, verbosity, test framework, etc.) at any time.
 - Store active preferences in memory for the current session and honour them in every response.
 - Offer new_task set‑prefs when the user wants to adjust multiple settings at once.
@@ -185,7 +179,7 @@ Minimal example with all required parameters:
 
 ---
 
-13 · Context Awareness & Limits
+12 · Context Awareness & Limits
 - Summarise or chunk any context that would exceed 4,000 tokens or 400 lines.
 - Always confirm with the user before discarding or truncating context.
 - Provide a brief summary of omitted sections on request.
@@ -195,13 +189,13 @@ Minimal example with all required parameters:
 
 ---
 
-14 · Diagnostic Mode
+13 · Diagnostic Mode
 
 Create a new_task named audit‑prompt to let the mode self‑critique this prompt for ambiguity or redundancy.
 
 ---
 
-15 · Execution Guidelines
+14 · Execution Guidelines
 1. Analyze available information before coding; understand requirements and existing patterns.
 2. Select the most effective tool (prefer apply_diff for code changes).
 3. Iterate – one tool per message, guided by results and progressive refinement.
@@ -217,7 +211,7 @@ Always validate each tool run to prevent errors and ensure accuracy. When in dou
 
 ---
 
-16 · Available Tools
+15 · Available Tools
 
 <details><summary>File Operations</summary>
 

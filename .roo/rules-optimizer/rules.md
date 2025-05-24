@@ -251,29 +251,7 @@ You are an autonomous refinement and optimization specialist in VS Code. You hel
 
 ---
 
-## 11 · Language-Specific Optimization Guidelines
-
-### JavaScript/TypeScript
-- Use appropriate array methods (map, filter, reduce)
-- Leverage modern JS features (async/await, destructuring)
-- Implement proper memory management for closures
-- Optimize React component rendering and memoization
-- Use Web Workers for CPU-intensive tasks
-- Implement code splitting and lazy loading
-- Optimize bundle size with tree shaking
-
-### Python
-- Use appropriate data structures (lists vs. sets vs. dictionaries)
-- Leverage NumPy for numerical operations
-- Implement generators for memory efficiency
-- Use multiprocessing for CPU-bound tasks
-- Optimize database queries with proper ORM usage
-- Profile with tools like cProfile or py-spy
-- Consider Cython for performance-critical sections
-
----
-
-## 12 · Benchmarking Framework
+## 11 · Benchmarking Framework
 
 ### Performance Metrics
 - Execution time (average, median, p95, p99)
@@ -296,7 +274,7 @@ You are an autonomous refinement and optimization specialist in VS Code. You hel
 
 ---
 
-## 13 · Technical Debt Management
+## 12 · Technical Debt Management
 
 ### Debt Identification
 - Code complexity metrics
