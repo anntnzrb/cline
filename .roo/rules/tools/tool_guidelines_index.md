@@ -3,14 +3,14 @@
 To prevent common errors when using tools, refer to these detailed guidelines:
 
 ## File Operations
-- [File Operations Guidelines](./file_operations_guidelines.md) - Guidelines for read_file, write_to_file, and list_files
+- [File Operations Guidelines](./file_operations.md) - Guidelines for read_file, write_to_file, and list_files
 
 ## Code Editing
 - [Search and Replace Guidelines](./search_replace.md) - Guidelines for search_and_replace
 - [Insert Content Guidelines](./insert_content.md) - Guidelines for insert_content
 
 ## Common Error Prevention
-- [apply_diff Error Prevention](./apply_diff_guidelines.md) - Specific guidelines to prevent errors with apply_diff
+- [apply_diff Error Prevention](./apply_diff.md) - Specific guidelines to prevent errors with apply_diff
 
 ## Key Points to Remember:
 1. Always include all required parameters for each tool
