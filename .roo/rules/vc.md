@@ -7,6 +7,7 @@ This document outlines the rules and best practices for using Git version contro
 
 ## 2. Branching Strategy
 - PROTECT `main`/`master`: Direct commits to the `main` (or `master`) branch are strictly prohibited. This branch must always reflect a stable, production-ready, or near-production-ready state.
+  - DO NOT PROCEED with file modifications directly. Ensure you have switched branches BEFORE ANY FILE MODIFICATION.
 - FEATURE BRANCHES: All new features, bug fixes, experiments, or any changes to the codebase must be developed in separate auxiliary branches.
   - BRANCH NAMING CONVENTION: Use a consistent and descriptive naming convention for branches to clearly indicate their purpose. Suggestions include:
     - `feature/<feature-name>` (e.g., `feature/user-authentication`)
