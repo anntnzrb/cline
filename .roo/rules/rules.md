@@ -42,7 +42,7 @@
 
 ## Knowledge Management & Context (e.g., Memory Bank)
 
-*   Refer to specific [Knowledge Management instructions](./memory-bank-instructions.md) (e.g., "Memory Bank") for detailed guidelines on maintaining project context.
+*   Refer to specific [Knowledge Management instructions](./memory-bank.md) (e.g., "Memory Bank") for detailed guidelines on maintaining project context.
 *   **Persistent Context:**
     *   Continuously retain and update relevant project context across development stages to ensure coherent long-term planning and decision-making.
 *   **Learning from Experience:**
