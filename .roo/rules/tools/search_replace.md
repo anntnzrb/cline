@@ -10,23 +10,23 @@
 </search_and_replace>
 ```
 
-### Required Parameters:
+### REQUIRED PARAMETERS:
 - `path`: The file path to modify
 - `operations`: JSON array of search and replace operations
 
-### Each Operation Must Include:
+### EACH OPERATION MUST INCLUDE:
 - `search`: The text to search for (REQUIRED)
 - `replace`: The text to replace with (REQUIRED)
 - `use_regex`: Boolean indicating whether to use regex (optional, defaults to false)
 
-### Common Errors to Avoid:
+### COMMON ERRORS TO AVOID:
 - Missing `search` parameter
 - Missing `replace` parameter
 - Invalid JSON format in operations array
 - Attempting to modify non-existent files
 - Malformed regex patterns when use_regex is true
 
-### Best Practices:
+### BEST PRACTICES:
 - Always include both search and replace parameters
 - Verify the file exists before attempting to modify it
 - Use apply_diff for complex changes instead

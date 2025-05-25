@@ -8,7 +8,7 @@ When I start a task, I will include `[Memory Bank: Active]` at the beginning of 
 
 The Memory Bank consists of core files and optional context files, all in Markdown format.
 
-### Core Files (Required)
+### Core Files (REQUIRED)
 1. `brief.md`
    This file is created and maintained manually by the developer. Don't edit this file directly but suggest to user to update it if it can be improved.
    - Foundation document that shapes all other files
@@ -75,7 +75,7 @@ After initialization, I will ask the user to read through the memory bank files 
 Memory Bank updates occur when:
 1. Discovering new project patterns
 2. After implementing significant changes
-3. When user explicitly requests with the phrase **update memory bank** (MUST review ALL files)
+3. When user explicitly requests with the phrase UPDATE MEMORY BANK (MUST review ALL files)
 4. When context needs clarification
 
 If I notice significant changes that should be preserved but the user hasn't explicitly requested an update, I should suggest: "Would you like me to update the memory bank to reflect these changes?"
@@ -87,11 +87,11 @@ To execute Memory Bank update, I will:
 3. Document Insights & Patterns
 4. If requested with additional context (e.g., "update memory bank using information from @/Makefile"), focus special attention on that source
 
-Note: When triggered by **update memory bank**, I MUST review every memory bank file, even if some don't require updates. Focus particularly on context.md as it tracks current state.
+Note: When triggered by UPDATE MEMORY BANK, I MUST review every memory bank file, even if some don't require updates. Focus particularly on context.md as it tracks current state.
 
 ### Add Task
 
-When user completes a repetitive task (like adding support for a new model version) and wants to document it for future reference, they can request: **add task** or **store this as a task**.
+When user completes a repetitive task (like adding support for a new model version) and wants to document it for future reference, they can request: ADD TASK or STORE THIS AS A TASK.
 
 This workflow is designed for repetitive tasks that follow similar patterns and require editing the same files. Examples include:
 - Adding support for new AI model versions
@@ -114,20 +114,20 @@ To execute Add Task workflow:
 Example task entry:
 ```markdown
 ## Add New Model Support
-**Last performed:** [date]
-**Files to modify:**
+LAST PERFORMED: [date]
+FILES TO MODIFY:
 - `/providers/gemini.md` - Add model to documentation
 - `/src/providers/gemini-config.ts` - Add model configuration
 - `/src/constants/models.ts` - Add to model list
 - `/tests/providers/gemini.test.ts` - Add test cases
 
-**Steps:**
+STEPS:
 1. Add model configuration with proper token limits
 2. Update documentation with model capabilities
 3. Add to constants file for UI display
 4. Write tests for new model configuration
 
-**Important notes:**
+IMPORTANT NOTES:
 - Check Google's documentation for exact token limits
 - Ensure backward compatibility with existing configurations
 - Test with actual API calls before committing

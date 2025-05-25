@@ -10,15 +10,15 @@
 </insert_content>
 ```
 
-### Required Parameters:
+### REQUIRED PARAMETERS:
 - `path`: The file path to modify
 - `operations`: JSON array of insertion operations
 
-### Each Operation Must Include:
+### EACH OPERATION MUST INCLUDE:
 - `start_line`: The line number where content should be inserted (REQUIRED)
 - `content`: The content to insert (REQUIRED)
 
-### Common Errors to Avoid:
+### COMMON ERRORS TO AVOID:
 - Missing `start_line` parameter
 - Missing `content` parameter
 - Invalid JSON format in operations array
@@ -26,7 +26,7 @@
 - Attempting to insert at line numbers beyond file length
 - Attempting to modify non-existent files
 
-### Best Practices:
+### BEST PRACTICES:
 - Always verify the file exists before attempting to modify it
 - Check file length before specifying start_line
 - Use read_file first to confirm file content and structure

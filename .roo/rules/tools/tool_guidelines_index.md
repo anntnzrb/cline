@@ -12,7 +12,7 @@ To prevent common errors when using tools, refer to these detailed guidelines:
 ## Common Error Prevention
 - [apply_diff Error Prevention](./apply_diff.md) - Specific guidelines to prevent errors with apply_diff
 
-## Key Points to Remember:
+## KEY POINTS TO REMEMBER:
 1. Always include all required parameters for each tool
 2. Verify file existence before attempting modifications
 3. For apply_diff, never include literal diff markers in code examples

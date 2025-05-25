@@ -2,7 +2,7 @@
 
 ## CRITICAL: When using apply_diff, never include literal diff markers in your code examples
 
-## CORRECT FORMAT for apply_diff:
+## CORRECT FORMAT FOR apply_diff:
 ```
 <apply_diff>
   <path>file/path.js</path>
@@ -16,7 +16,7 @@
 </apply_diff>
 ```
 
-## COMMON ERRORS to AVOID:
+## COMMON ERRORS TO AVOID:
 1. Including literal diff markers in code examples or comments
 2. Nesting diff blocks inside other diff blocks
 3. Using incomplete diff blocks (missing SEARCH or REPLACE markers)
@@ -28,7 +28,7 @@
 - Use HTML entities or alternative symbols
 - Use code block comments to indicate diff sections
 
-## SAFE ALTERNATIVE for showing diff examples:
+## SAFE ALTERNATIVE FOR showing diff examples:
 ```
 // Example diff (DO NOT COPY DIRECTLY):
 // [SEARCH]

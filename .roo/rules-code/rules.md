@@ -36,14 +36,14 @@ Step | Action
 ---
 
 4 · Code Quality Standards
-- **DRY (Don't Repeat Yourself)**: Eliminate code duplication through abstraction
-- **SOLID Principles**: Follow Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion
-- **Clean Code**: Descriptive naming, consistent formatting, minimal nesting
-- **Testability**: Design for unit testing with dependency injection and mockable interfaces
-- **Documentation**: Self-documenting code with strategic comments explaining "why" not "what"
-- **Error Handling**: Graceful failure with informative error messages
-- **Performance**: Optimize critical paths while maintaining readability
-- **Security**: Validate all inputs, sanitize outputs, follow least privilege principle
+- DRY (Don't Repeat Yourself): Eliminate code duplication through abstraction
+- SOLID PRINCIPLES: Follow Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion
+- CLEAN CODE: Descriptive naming, consistent formatting, minimal nesting
+- TESTABILITY: Design for unit testing with dependency injection and mockable interfaces
+- DOCUMENTATION: Self-documenting code with strategic comments explaining "why" not "what"
+- ERROR HANDLING: Graceful failure with informative error messages
+- PERFORMANCE: Optimize critical paths while maintaining readability
+- SECURITY: Validate all inputs, sanitize outputs, follow least privilege principle
 
 ---
 
@@ -86,13 +86,13 @@ XML‑style invocation template
 
 ## Tool Error Prevention Guidelines
 
-1. **Parameter Validation**: Always verify all required parameters are included before executing any tool
-2. **File Existence**: Check if files exist before attempting to modify them using `read_file` first
-3. **Complete Diffs**: Ensure all `apply_diff` operations include complete SEARCH and REPLACE blocks
-4. **Required Parameters**: Never omit required parameters for any tool
-5. **Parameter Format**: Use correct format for complex parameters (JSON arrays, objects)
-6. **Line Counts**: Always include `line_count` parameter when using `write_to_file`
-7. **Search Parameters**: Always include both `search` and `replace` parameters when using `search_and_replace`
+1. PARAMETER VALIDATION: Always verify all required parameters are included before executing any tool
+2. FILE EXISTENCE: Check if files exist before attempting to modify them using `read_file` first
+3. COMPLETE DIFFS: Ensure all `apply_diff` operations include complete SEARCH and REPLACE blocks
+4. REQUIRED PARAMETERS: Never omit required parameters for any tool
+5. PARAMETER FORMAT: Use correct format for complex parameters (JSON arrays, objects)
+6. LINE COUNTS: Always include `line_count` parameter when using `write_to_file`
+7. SEARCH PARAMETERS: Always include both `search` and `replace` parameters when using `search_and_replace`
 
 Minimal example with all required parameters:
 
@@ -111,29 +111,29 @@ Minimal example with all required parameters:
 
 ## Primary Tools and Error Prevention
 
-- **For code modifications**: Always prefer apply_diff as the default tool for precise changes to maintain formatting and context.
+- FOR CODE MODIFICATIONS: Always prefer apply_diff as the default tool for precise changes to maintain formatting and context.
   - ALWAYS include complete SEARCH and REPLACE blocks
   - ALWAYS verify the search text exists in the file first using read_file
   - NEVER use incomplete diff blocks
 
-- **For new implementations**: Use write_to_file with complete, well-structured code following language conventions.
+- FOR NEW IMPLEMENTATIONS: Use write_to_file with complete, well-structured code following language conventions.
   - ALWAYS include the line_count parameter
   - VERIFY file doesn't already exist before creating it
 
-- **For documentation**: Use insert_content to add comments, JSDoc, or documentation at specific locations.
+- FOR DOCUMENTATION: Use insert_content to add comments, JSDoc, or documentation at specific locations.
   - ALWAYS include valid start_line and content in operations array
   - VERIFY the file exists before attempting to insert content
 
-- **For simple text replacements**: Use search_and_replace only as a fallback when apply_diff is too complex.
+- FOR SIMPLE TEXT REPLACEMENTS: Use search_and_replace only as a fallback when apply_diff is too complex.
   - ALWAYS include both search and replace parameters
   - NEVER use search_and_replace with empty search parameter
   - VERIFY the search text exists in the file first
 
-- **For debugging**: Combine read_file with execute_command to validate behavior before making changes.
-- **For refactoring**: Use apply_diff with comprehensive diffs that maintain code integrity and preserve functionality.
-- **For security fixes**: Prefer targeted apply_diff with explicit validation steps to prevent regressions.
-- **For performance optimization**: Document changes with clear before/after metrics using comments.
-- **For test creation**: Use write_to_file for test suites that cover edge cases and maintain independence.
+- FOR DEBUGGING: Combine read_file with execute_command to validate behavior before making changes.
+- FOR REFACTORING: Use apply_diff with comprehensive diffs that maintain code integrity and preserve functionality.
+- FOR SECURITY FIXES: Prefer targeted apply_diff with explicit validation steps to prevent regressions.
+- FOR PERFORMANCE OPTIMIZATION: Document changes with clear before/after metrics using comments.
+- FOR TEST CREATION: Use write_to_file for test suites that cover edge cases and maintain independence.
 
 ---
 
@@ -141,14 +141,14 @@ Minimal example with all required parameters:
 
 ## Tool Error Prevention
 
-- **Before using any tool**:
+- BEFORE USING ANY TOOL:
   - Verify all required parameters are included
   - Check file existence before modifying files
   - Validate search text exists before using apply_diff or search_and_replace
   - Include line_count parameter when using write_to_file
   - Ensure operations arrays are properly formatted JSON
 
-- **Common tool errors to avoid**:
+- COMMON TOOL ERRORS TO AVOID:
   - Missing required parameters (search, replace, path, content)
   - Incomplete diff blocks in apply_diff
   - Invalid JSON in operations arrays
@@ -156,7 +156,7 @@ Minimal example with all required parameters:
   - Attempting to modify non-existent files
   - Using search_and_replace without both search and replace values
 
-- **Recovery process**:
+- RECOVERY PROCESS:
   - If a tool call fails, explain the error in plain English and suggest next steps (retry, alternative command, or request clarification)
   - If required context is missing, ask the user for it before proceeding
   - When uncertain, use ask_followup_question to resolve ambiguity
