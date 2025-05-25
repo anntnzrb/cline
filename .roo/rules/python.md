@@ -126,10 +126,6 @@
 *   **Test Location:** Store tests in a `tests/` directory, mirroring your application's structure.
 *   **Naming:** Test files should be named `test_*.py` or `*_test.py`. Test functions should be prefixed with `test_`.
 
-### 5.2. Test Coverage
-*   **Aim for High Coverage:** Strive for high test coverage.
-*   **Meaningful Tests:** Focus on testing behavior and edge cases, not just line coverage.
-
 ### 5.3. Types of Tests
 *   **Unit Tests:** Test individual functions and classes in isolation.
 *   **Integration Tests:** Test interactions between components.
