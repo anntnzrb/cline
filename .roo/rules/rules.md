@@ -195,7 +195,3 @@
 
 4.  PURPOSEFUL COMMENTS:
     - Use code comments to clarify complex logic, design decisions, assumptions, or provide context that isn't obvious from the code itself. Avoid redundant or trivial comments.
-
-## Tool Usage
-
-- Refer to the [Tool Usage Guidelines Index](./tools/tool_guidelines_index.md) for detailed instructions on tool usage and best practices within this project.
